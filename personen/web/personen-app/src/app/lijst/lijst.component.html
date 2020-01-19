@@ -1,0 +1,10 @@
+<br/>
+<input type="text" (input)="filter($event.target.value)"/>
+
+<table>
+  <tr *ngFor="let user of filtertedUsers">
+    <th style="text-align: left; cursor: pointer;" [routerLink]="['/update', user.naam]">{{ user.naam }}</th>
+    <th>{{user.datum| date : 'mediumDate' }}</th>
+    <th style="text-align: right; width: 50px; cursor: pointer;" (click)="delete(user)">X</th>
+  </tr>
+</table>

@@ -1,0 +1,11 @@
+
+<div>
+    <h1>Update</h1>
+    Naam:<br>
+    <input type="text" name="firstname" [(ngModel)]="userToUpdate.naam">
+    <br>
+    Datum:<br>
+    <input type="date" name="datum" [(ngModel)]="userToUpdate.datum">
+    <br><br>
+    <button (click)="update()">Save</button>
+</div> 

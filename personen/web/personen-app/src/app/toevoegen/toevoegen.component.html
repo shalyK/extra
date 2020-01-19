@@ -1,0 +1,12 @@
+
+<div>
+    Naam:<br>
+    <input type="text" name="firstname" [(ngModel)]="user.naam">
+    <br>
+    Datum:<br>
+    <input type="date" name="datum" [(ngModel)]="user.datum">
+    <br><br>
+    <button (click)="toevoegen()">Save</button>
+
+    <h4>{{user | json}}</h4>
+</div> 
