@@ -8,7 +8,7 @@ mongo.MongoClient.connect('mongodb://localhost:27017', (err, database) => {
   if (err) return console.log(err)
   db = database.db('apti')
 })
-
+// nodemon app.js
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
